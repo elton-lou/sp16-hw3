@@ -1,0 +1,11 @@
+<h1>All Users, Cats, and Tasks in database</h1>
+<% @users.each do |user| %>
+    <p> <%= "Username: #{user.username}; Email: #{user.email}; Age: #{user.age}" %> </p>
+<% end %>
+<% @cats.each do |cat| %>
+    <p> <%= "Name: #{cat.name}" %> </p>
+<% end %>
+<% @todos.each do |todo| %>
+    <p> <%= "Task: #{todo.task}; Done?: #{todo.finished}" %> </p>
+<% end %>
+
